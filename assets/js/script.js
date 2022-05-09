@@ -45,5 +45,5 @@ window.setInterval(
     };
     xhr.send();
   }),
-  5000
+  7000
 );
