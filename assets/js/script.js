@@ -30,7 +30,8 @@ close.addEventListener("click", function () {
 window.setInterval(
   (window.onload = function getQuote() {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://zenquotes.io/api/random", true);
+    var url = "https://cors-anywhere.herokuapp.com/https://zenquotes.io/api/random";
+    xhr.open("GET", url, true);
 
     xhr.onload = function () {
       if (this.readyState == 4 && this.status == 200) {
