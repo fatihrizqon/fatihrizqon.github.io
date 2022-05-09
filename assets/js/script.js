@@ -27,6 +27,10 @@ close.addEventListener("click", function () {
 });
 /* End Navbar Controls */
 
+// Enable CORS globally for any host
+var corsAttr = new EnableCorsAttribute("*", "*", "*");
+config.EnableCors(corsAttr);
+
 window.setInterval(
   (window.onload = function getQuote() {
     var xhr = new XMLHttpRequest();
