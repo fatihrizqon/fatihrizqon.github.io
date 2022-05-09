@@ -35,7 +35,6 @@ window.setInterval(
     xhr.onload = function () {
       if (this.readyState == 4 && this.status == 200) {
         var quote = JSON.parse(this.responseText);
-        // console.log(quote[0].h);
         document.getElementById("quote").innerHTML = quote[0].h;
       }
     };
