@@ -27,16 +27,19 @@ close.addEventListener("click", function () {
 });
 /* End Navbar Controls */
 
-window.onload = function getQuote() {
-  var xhr = new XMLHttpRequest();
-  var url = "https://cors-anywhere.herokuapp.com/https://zenquotes.io/api/random";
-  xhr.open("GET", url, true);
+window.setInterval(
+  (window.onload = function getQuote() {
+    var xhr = new XMLHttpRequest();
+    var url = "https://cors-anywhere.herokuapp.com/https://zenquotes.io/api/random";
+    xhr.open("GET", url, true);
 
-  xhr.onload = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      var quote = JSON.parse(this.responseText);
-      document.getElementById("quote").innerHTML = quote[0].h;
-    }
-  };
-  xhr.send();
-};
+    xhr.onload = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var quote = JSON.parse(this.responseText);
+        document.getElementById("quote").innerHTML = quote[0].h;
+      }
+    };
+    xhr.send();
+  }),
+  6000
+);
