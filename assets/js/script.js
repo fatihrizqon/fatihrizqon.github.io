@@ -1,3 +1,4 @@
+/* Navbar Controls */
 window.onscroll = function () {
   const header = document.querySelector("header");
   const fixed = header.offsetTop;
@@ -24,3 +25,22 @@ close.addEventListener("click", function () {
   navigation.classList.add("hidden");
   close.classList.add("hidden");
 });
+/* End Navbar Controls */
+
+window.setInterval(
+  (window.onload = function getQuote() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://zenquotes.io/api/random", true);
+
+    xhr.onload = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var quote = JSON.parse(this.responseText);
+        // console.log(quote[0].h);
+        document.getElementById("quote").innerHTML = quote[0].h;
+      }
+    };
+
+    xhr.send();
+  }),
+  6000
+);
