@@ -40,7 +40,7 @@ window.setInterval(
         // document.getElementById("quote").innerHTML = quote[0].h;
 
         document.getElementById("quoteText").innerHTML = `"${quote.text}"`;
-        document.getElementById("quoteAuthor").innerHTML = `&mdash; ${quote.author} &mdash;`;
+        document.getElementById("quoteAuthor").innerHTML = `&mdash; ${quote.author} `;
       }
     };
     xhr.send();

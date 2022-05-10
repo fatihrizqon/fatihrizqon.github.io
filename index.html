@@ -22,8 +22,8 @@
     <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent p-3">
       <div class="container">
         <div class="relative flex items-center justify-between">
-          <div class="px-6"><a href="#home" class="text-lg font-bold text-primary">Fatih Rizqon</a></div>
-          <div class="flex items-center px-6">
+          <div class="px-3"><a href="#home" class="text-lg font-bold text-primary">Fatih Rizqon</a></div>
+          <div class="flex items-center px-3">
             <button id="hamburger" name="hamburger" class="mt-1 text-dark lg:hidden" type="button"><i class="bx bx-menu bx-md"></i></button>
             <button id="close" name="close" class="mt-1 hidden text-dark lg:hidden" type="button"><i class="bx bx-x bx-md"></i></button>
 
@@ -50,7 +50,7 @@
     <!-- Header End -->
 
     <!-- Home Section Start -->
-    <section id="home" class="pt-16 lg:pt-48">
+    <section id="home" class="pt-14 lg:pt-48">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
@@ -63,11 +63,15 @@
             <a href="#contact" class="rounded-xl bg-primary py-3 px-6 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:right-0 lg:mt-9">
+            <div class="relative mt-11 overflow-hidden lg:right-0 lg:mt-9">
               <img class="mx-auto max-w-full" src="assets/images/profile.png" alt="Muhammad Fatih Rizqon" />
-              <span class="absolute -bottom-10 left-1/2 -z-10 -translate-x-1/2 sm:scale-150 md:scale-150">
-                <svg width="500" height="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#000094" d="M42.4,26.3C28.1,49.3,-28.9,49.5,-43.1,26.6C-57.3,3.6,-28.7,-42.4,-0.1,-42.5C28.4,-42.6,56.8,3.3,42.4,26.3Z" transform="translate(100 100) scale(1.1)" />
+              <span class="absolute -bottom-10 left-1/2 -z-10 -translate-x-1/2 sm:scale-150 md:scale-150 lg:bottom-1">
+                <svg width="325" height="325" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#000094"
+                    d="M37.5,-67.4C46.3,-60,49.3,-45.1,56.5,-32.6C63.7,-20.2,75,-10.1,80.4,3.1C85.8,16.3,85.2,32.6,75.1,40C65,47.5,45.4,46.1,31.3,54.5C17.2,62.9,8.6,81,-1.5,83.6C-11.6,86.1,-23.1,73.1,-35.9,63.9C-48.7,54.8,-62.7,49.5,-68.8,39.5C-74.9,29.5,-73.1,14.8,-68.1,2.9C-63.1,-9,-54.8,-17.9,-48.6,-27.7C-42.3,-37.5,-38.1,-48.1,-30.4,-56.1C-22.6,-64.1,-11.3,-69.6,1.5,-72.3C14.4,-74.9,28.8,-74.9,37.5,-67.4Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
                 </svg>
               </span>
             </div>
@@ -78,7 +82,7 @@
     <!-- Home Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32 lg:pt-16">
+    <section id="about" class="md:pt-18 pt-20 pb-32 lg:pt-20">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
@@ -163,7 +167,7 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="bg-slate-50 pt-36 pb-32 lg:pt-16">
+    <section id="portfolio" class="md:pt-18 bg-slate-50 pt-20 pb-32 lg:pt-20">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-4 max-w-xl text-center">
@@ -173,17 +177,24 @@
           <div class="flex w-full flex-wrap justify-center px-4">
             <div class="xl:1/3 mb-12 p-4 md:w-1/2 lg:w-1/3">
               <div class="mb-2 overflow-hidden rounded-md shadow-md">
-                <img src="https://source.unsplash.com/featured/1000x600" alt="Portfolio 1" width="w-full" />
+                <img src="assets/images/PointofSaleKu.jpg" alt="Portfolio 1" width="w-full" />
               </div>
               <h4 class="mb-1 text-xl font-semibold text-dark">Point of Sale</h4>
-              <p class="text-base font-medium text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus tempore soluta est ratione minima quibusdam!</p>
+              <p class="font-mono text-base text-light">
+                Merupakan sebuah Single Page App (SPA) yang dikembangkan menggunakan <span class="font-thin italic">Lumen</span> sebagai backend, dan <span class="font-thin italic">Angular</span> sebagai frontend untuk mendukung kegiatan
+                operasional toko retail seperti penjualan, inventaris barang, laporan keuangan, dan sebagainya. <a href="https://pointofsaleku.web.app/" class="font-semibold text-primary">Demo</a>
+                <span class="text-xs font-extralight italic">(username: manajer | password: 456654)</span>
+              </p>
             </div>
             <div class="xl:1/3 mb-12 p-4 md:w-1/2 lg:w-1/3">
               <div class="mb-2 overflow-hidden rounded-md shadow-md">
-                <img src="https://source.unsplash.com/featured/1000x600" alt="Portfolio 1" width="w-full" />
+                <img src="assets/images/PahlawanKita.jpg" alt="Portfolio 1" width="w-full" />
               </div>
               <h4 class="mb-1 text-xl font-semibold text-dark">PahlawanKita</h4>
-              <p class="text-base font-medium text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus tempore soluta est ratione minima quibusdam!</p>
+              <p class="font-mono text-base text-light">
+                Merupakan sebuah Single Page App (SPA) yang dikembangkan menggunakan <span class="font-thin italic">Lumen</span> sebagai backend, dan <span class="font-thin italic">Angular</span> sebagai frontend untuk mengenal Pahlawan
+                Nasional lebih dekat. <a href="https://pahlawan-kita.web.app/" class="font-semibold text-primary">Demo</a>
+              </p>
             </div>
           </div>
         </div>
@@ -192,7 +203,7 @@
     <!-- Portfolio Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32 lg:pt-16">
+    <section id="contact" class="md:pt-18 pt-20 pb-32 lg:pt-20">
       <div class="container">
         <div class="mx-auto mb-4 w-full text-center">
           <h4 class="mb-4 text-lg font-bold uppercase text-primary lg:text-xl">Hubungi Saya</h4>
@@ -237,7 +248,7 @@
     <!-- Contact Section End -->
 
     <!-- Footer Start -->
-    <section id="footer" class="bg-primary pt-24 pb-12">
+    <section id="footer" class="bg-primary pt-24 pb-4">
       <div class="container">
         <div class="flex flex-wrap text-white">
           <div class="mb-12 w-full px-4 md:w-1/3">
@@ -247,7 +258,7 @@
             <h3 class="mb-2 flex items-center"><i class="bx bxl-whatsapp bx-sm mx-2" style="color: #4fce5d"></i> +62 821 4555 6225</h3>
           </div>
           <div class="mb-12 w-full px-4 md:w-1/3">
-            <div id="quote" class="animate-pulse text-center italic text-accent">
+            <div id="quote" class="animate-pulse text-center italic text-slate-50">
               <blockquote id="quoteText"></blockquote>
               <p id="quoteAuthor" class="font-bold"></p>
             </div>
@@ -260,7 +271,7 @@
             <h3 class="mb-2 flex"><a href="#contact">Hubungi Saya</a></h3>
           </div>
         </div>
-        <div class="w-full border-t border-slate-700 pt-10">
+        <div class="w-full border-t border-slate-700 pt-5">
           <div class="mb-4 flex items-center justify-center">
             <a href="https://www.instagram.com/fatihrizqon" class="mr-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-light text-white hover:bg-dark hover:text-slate-50" target="_blank"
               ><i class="bx bxl-instagram bx-sm"></i>
