@@ -30,14 +30,12 @@ close.addEventListener("click", function () {
 window.setInterval(
   (window.onload = function getQuote() {
     var xhr = new XMLHttpRequest();
-    // var url = "https://zenquotes.io/api/random";
     var url = "https://type.fit/api/quotes";
     xhr.open("GET", url, true);
     xhr.onload = function () {
       if (this.readyState == 4 && this.status == 200) {
         var quote = JSON.parse(this.responseText);
         quote = quote[Math.floor(Math.random() * quote.length)];
-        // document.getElementById("quote").innerHTML = quote[0].h;
 
         document.getElementById("quoteText").innerHTML = `"${quote.text}"`;
         document.getElementById("quoteAuthor").innerHTML = `&mdash; ${quote.author} `;
