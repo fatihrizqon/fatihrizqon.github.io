@@ -30,10 +30,12 @@ close.addEventListener("click", function () {
 window.setInterval(
   (window.onload = function getQuote() {
     document.getElementById("loading").classList.toggle("hidden");
+    document.getElementById("quote").classList.toggle("hidden");
     fetch("https://type.fit/api/quotes")
       .then((response) => response.json())
       .then((response) => {
         document.getElementById("loading").classList.toggle("hidden");
+        document.getElementById("quote").classList.toggle("hidden");
         quote = response[Math.floor(Math.random() * response.length)];
         document.getElementById("quoteText").innerHTML = `"${quote.text}"`;
         document.getElementById("quoteAuthor").innerHTML = `&mdash; ${quote.author} `;
