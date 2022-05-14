@@ -42,5 +42,5 @@ window.setInterval(
       })
       .catch((response) => console.log(response));
   }),
-  5000
+  7000
 );
