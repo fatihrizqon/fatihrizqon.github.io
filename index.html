@@ -1,0 +1,489 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="google-site-verification" content="7WneGssL3JqYqYYVv9EFhDqRHXnLmNrCwq9raoBpvQA" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Muhammad Fatih Rizqon" />
+        <meta name="description"
+            content="A Personal Webpage to provide my information, and feel free to connect with me through my social media. And let's build great things!" />
+        <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon-dark.png" />
+        <title>Profile - Muhammad Fatih Rizqon</title>
+        <!-- Style -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <!-- AlpineJS -->
+        <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J21Y3V7HWE"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-J21Y3V7HWE");
+        </script>
+    </head>
+
+    <body class="flex flex-col justify-between min-h-screen">
+        <header class="relative">
+            <div id="navbar" x-data="{ navigation: false }"
+                class="z-10 fixed w-full text-white bg-black/50 shadow-md backdrop-blur-sm navbar-transparent">
+                <ul class=" flex w-[90%] mx-auto items-center justify-between py-3">
+                    <li>
+                        <a href="#home" class="hover:text-gray-300 transition-all select-none cursor-pointer"
+                            @click="navigation = false">Fatih
+                            Rizqon</a>
+                    </li>
+                    <li class="md:hidden">
+                        <button @click="navigation = !navigation" x-show="!navigation"><i
+                                class='bx bx-menu bx-sm'></i></button>
+                        <button @click="navigation = !navigation" x-show="navigation"><i
+                                class='bx bx-x bx-sm'></i></button>
+                    </li>
+                    <!-- Tablet/Desktop Navigations -->
+                    <li class="hidden md:flex md:gap-6 lg:gap-10">
+                        <a href="#home"
+                            class="w-full py-2 hover:text-gray-300 transition-all select-none cursor-pointer"
+                            @click="navigation = false">
+                            Beranda
+                        </a>
+                        <a href="#about"
+                            class="w-full py-2 hover:text-gray-300 transition-all select-none cursor-pointer"
+                            @click="navigation = false">
+                            Tentang
+                        </a>
+                        <a href="#portfolio"
+                            class="w-full py-2 hover:text-gray-300 transition-all select-none cursor-pointer"
+                            @click="navigation = false">
+                            Portofolio
+                        </a>
+                        <a href="#contact"
+                            class="w-full py-2 hover:text-gray-300 transition-all select-none cursor-pointer"
+                            @click="navigation = false">
+                            Kontak
+                        </a>
+                    </li>
+                </ul>
+                <!-- Mobile Navigations -->
+                <ul id="navigation" x-show="navigation" class="flex flex-col w-[90%] mx-auto pb-4" x-transition
+                    @click.outside="navigation = false" @scroll.window.throttle="navigation = false">
+                    <li
+                        class="w-full font-light md:font-normal py-2 hover:text-gray-300 transition-all select-none cursor-pointer">
+                        <a href="#home"
+                            class="w-full py-2 hover:text-gray-300 transition-all select-none cursor-pointer"
+                            @click="navigation = false">
+                            Beranda
+                        </a>
+                    </li>
+                    <li
+                        class="w-full font-light md:font-normal py-2 hover:text-gray-300 transition-all select-none cursor-pointer">
+                        <a href="#about"
+                            class="w-full py-2 hover:text-gray-300 transition-all select-none cursor-pointer"
+                            @click="navigation = false">
+                            Tentang
+                        </a>
+                    </li>
+                    <li
+                        class="w-full font-light md:font-normal py-2 hover:text-gray-300 transition-all select-none cursor-pointer">
+                        <a href="#portfolio"
+                            class="w-full py-2 hover:text-gray-300 transition-all select-none cursor-pointer"
+                            @click="navigation = false">
+                            Portofolio
+                        </a>
+                    </li>
+
+                    <li
+                        class="w-full font-light md:font-normal py-2 hover:text-gray-300 transition-all select-none cursor-pointer">
+                        <a href="#contact"
+                            class="w-full py-2 hover:text-gray-300 transition-all select-none cursor-pointer"
+                            @click="navigation = false">
+                            Kontak
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="mt-16 flex flex-col w-full min-h-screen md:items-center justify-center text-white">
+            <!-- Home Section -->
+            <section id="home" class="md:pt-18 pt-20 pb-32 lg:pt-20 text-white w-full">
+                <div class="w-[90%] md:w-[80%] mx-auto">
+                    <div class="flex flex-col-reverse md:flex-row items-center justify-center w-full gap-8">
+                        <div class="w-full px-4 lg:w-1/2 flex flex-col">
+                            <div class="grid justify-start">
+                                <h1 class="text-base font-semibold md:text-lg">
+                                    Hai 👋, Saya
+                                    <a class="mt-1 block text-4xl font-bold  "> Muhammad <span
+                                            class="cursor-pointer font-bold transition duration-300 hover:text-accent  ">Fatih</span>
+                                        Rizqon </a>
+                                </h1>
+                                <h2 class="mb-5 animate-pulse text-lg font-medium text-light md:text-xl">
+                                    < Web <span class="font-bold">Developer</span> />
+                                </h2>
+                            </div>
+                            <div class="grid justify-center md:justify-start">
+                                <a href="#contact"
+                                    class="rounded-full py-2 px-3 shadow-md bg-black hover:brightness-50 text-md font-light text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi
+                                    Saya</a>
+                            </div>
+                        </div>
+
+                        <div class="w-full px-4 lg:w-1/2 flex items-center justify-center">
+                            <div class="overflow-hidden ">
+                                <div id="clue" class="aspect-square relative overflow-hidden">
+                                    <div class="w-[200px] h-[200px] md:w-[250px] md:h-[250px] bg-cover rounded-full bg-black/50 backdrop-blur-sm border-4"
+                                        style="background-image: url('assets/images/profile.png');"
+                                        alt="Muhammad Fatih Rizqon">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="md:pt-18 pt-20 pb-32 lg:pt-20 text-white">
+                <div class="w-[90%] md:w-[80%] mx-auto">
+                    <div class="flex flex-wrap">
+                        <div class="mb-5 w-full px-4">
+                            <h4 class="mb-4 text-lg font-bold uppercase  lg:text-xl">Tentang Saya</h4>
+                            <p class="text-justify text-base  ">
+                                Halo perkenalkan nama saya Muhammad <span class="font-semibold">Fatih</span> Rizqon (25
+                                tahun), saya
+                                berasal dari Ngawi, Jawa Timur, Indonesia. Pendidikan Dasar & Menengah saya dimulai di
+                                kota
+                                kelahiran saya, dan pada 2014
+                                hingga saat ini saya berdomisili di <span class="font-semibold">Daerah Istimewa
+                                    Yogyakarta</span>.
+                                Saya menggemari Teknologi Informasi sejak saat SMP, hingga pada akhirnya saya berhasil
+                                menyelesaikan
+                                studi pada bidang yang
+                                saya gemari sampai saat ini.
+                            </p>
+                        </div>
+
+                        <div class="mb-5 w-full px-4">
+                            <div class="grid justify-center">
+                                <a href="assets/files/Muhammad Fatih Rizqon - Curriculum Vitae.pdf">
+                                    <span
+                                        class="flex items-center text-sm text-white hover:text-blue-500 transition-all">
+                                        <i class="bx bxs-file-pdf bx-sm mr-1 text-red-500"></i>
+                                        Download Curriculum Vitae</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mb-10 w-full px-4 lg:w-1/2">
+                            <div class="rounded-lg bg-black/25 shadow-md p-4 ">
+                                <h4 class="mb-4 text-lg font-semibold text-light">Riwayat
+                                    Pendidikan</h4>
+                                <ol class="relative border-l border-slate-200">
+                                    <li class="mb-10 ml-4">
+                                        <div
+                                            class="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-slate-800 bg-slate-500">
+                                        </div>
+                                        <time class="mb-1 text-sm font-normal leading-none text-slate-400">September
+                                            2014</time>
+                                        <h3 class="text-base font-normal  ">Memulai Studi Pendidikan Teknik
+                                            Informatika
+                                            (S1) di Universitas Negeri Yogyakarta</h3>
+                                    </li>
+                                    <li class="mb-10 ml-4">
+                                        <div
+                                            class="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-slate-800 bg-slate-500">
+                                        </div>
+                                        <time class="mb-1 text-sm font-normal leading-none text-slate-400">September
+                                            2017 - November
+                                            2018</time>
+                                        <h3 class="text-base font-normal  ">Magang Kependidikan di SMK
+                                            Negeri 2
+                                            Wonosari, Gunungkidul, Yogyakarta</h3>
+                                    </li>
+                                    <li class="mb-10 ml-4">
+                                        <div
+                                            class="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-slate-800 bg-slate-500">
+                                        </div>
+                                        <time class="mb-1 text-sm font-normal leading-none text-slate-400">Mei
+                                            2019</time>
+                                        <h3 class="text-base font-normal  ">Menyelesaikan Studi Pendidikan
+                                            Teknik
+                                            Informatika (S1) di Universitas Negeri Yogyakarta</h3>
+                                        <p class="text-sm italic">
+                                            Penelitian Skripsi:
+                                            <a href="http://eprints.uny.ac.id/64028/"
+                                                class="font-bold   hover:text-slate-700" target="_blank">'Pengembangan
+                                                Sistem Informasi Internship Program Tracer Berbasis Website Menggunakan
+                                                MEAN Stack
+                                                di Jurusan Pendidikan Teknik Elektronika dan Informatika Fakultas Teknik
+                                                Universitas
+                                                Negeri Yogyakarta'</a>
+                                        </p>
+                                    </li>
+                                    <li class="mb-10 ml-4">
+                                        <div
+                                            class="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-slate-800 bg-slate-500">
+                                        </div>
+                                        <time class="mb-1 text-sm font-normal leading-none text-slate-400">September
+                                            2019</time>
+                                        <h3 class="text-base font-normal  ">Memulai Studi Pendidikan Teknik
+                                            Elektronika
+                                            & Informatika (S2) di Universitas Negeri Yogyakarta</h3>
+                                    </li>
+                                    <li class="mb-10 ml-4">
+                                        <div
+                                            class="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-slate-800 bg-slate-500">
+                                        </div>
+                                        <time class="mb-1 text-sm font-normal leading-none text-slate-400">September
+                                            2021</time>
+                                        <h3 class="text-base font-normal  ">Menyelesaikan Studi Pendidikan
+                                            Teknik
+                                            Elektronika & Informatika (S2) di Universitas Negeri Yogyakarta</h3>
+                                        <p class="text-sm italic">Penelitian Tesis: 'Analisis Implementasi Pembelajaran
+                                            Online
+                                            Menggunakan The DeLone and McLean Model of IS Success Siswa SMA Negeri di
+                                            Kabupaten
+                                            Ngawi'</p>
+                                        <p class="text-sm italic">
+                                            Publikasi:
+                                            <a href="https://iopscience.iop.org/article/10.1088/1742-6596/2111/1/012013"
+                                                target="_blank" class="font-bold   hover:text-slate-700">'Fuzzy Time
+                                                Series for Forecasting Railway Passengers in Indonesia - Muhammad Fatih
+                                                Rizqon and
+                                                Handaru Jati 2021 J. Phys.: Conf. Ser. 2111 012013'</a>
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="mb-10 w-full px-4 lg:w-1/2">
+                            <div class="mb-8 rounded-lg bg-black/25 shadow-md p-4">
+                                <h4 class="mb-4 text-lg font-semibold text-light">Keahlian Saya</h4>
+                                <ul>
+                                    <li class="text-base  ">✔ Quantitative Research</li>
+                                    <li class="text-base  ">✔ Statistical Data Analysis (SEM-PLS)</li>
+                                    <li class="text-base  ">✔ Web Application Development (Laravel/Lumen,
+                                        Bootstrap,
+                                        Angular)</li>
+                                    <li class="text-base  ">✔ Web Scrapping (Python)</li>
+                                </ul>
+                            </div>
+
+                            <div class="rounded-lg bg-black/25 shadow-md p-4">
+                                <h4 class="mb-4 text-lg font-semibold text-light">Media Sosial</h4>
+                                <p class="text-justify text-base  ">Mari terhubung dengan saya! Berikut
+                                    adalah beberapa
+                                    media sosial yang saya gunakan.</p>
+                                <div class="mt-4 flex items-center">
+                                    <a href="https://www.instagram.com/fatihrizqon"
+                                        class="mr-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black/25 shadow-md hover:bg-dark hover:text-slate-50"
+                                        target="_blank"><i class="bx bxl-instagram bx-sm"></i>
+                                    </a>
+                                    <a href="https://www.twitter.com/fatihrizqon"
+                                        class="mr-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black/25 shadow-md hover:bg-dark hover:text-slate-50"
+                                        target="_blank"><i class="bx bxl-twitter bx-sm"></i>
+                                    </a>
+                                    <a href="mailto: fatihrizqon@gmail.com"
+                                        class="mr-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black/25 shadow-md hover:bg-dark hover:text-slate-50"
+                                        target="_blank"><i class="bx bxl-gmail bx-sm"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/fatihrizqon/"
+                                        class="mr-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black/25 shadow-md hover:bg-dark hover:text-slate-50"
+                                        target="_blank"><i class="bx bxl-linkedin-square bx-sm"></i>
+                                    </a>
+                                    <a href="https://www.github.com/fatihrizqon"
+                                        class="mr-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black/25 shadow-md hover:bg-dark hover:text-slate-50"
+                                        target="_blank"><i class="bx bxl-github bx-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio" class="md:pt-18 pt-20 pb-32 lg:pt-20">
+                <div class="w-[90%] md:w-[80%] mx-auto">
+                    <div class="w-full px-4">
+                        <div class="mx-auto mb-4 max-w-xl text-center">
+                            <h4 class="mb-4 text-lg font-bold uppercase  lg:text-xl">Portofolio</h4>
+                            <p class="text-medium font-medium ">Berikut adalah beberapa portofolio (<span
+                                    class="italic">Web Application</span>) terbaru saya, yang pernah saya kembangkan:
+                            </p>
+                        </div>
+                        <div class="flex w-full flex-wrap justify-center px-4">
+                            <div class="xl:1/3 mb-12 p-4 md:w-1/2 lg:w-1/3">
+                                <div class="mb-2 overflow-hidden">
+                                    <img src="assets/images/PointofSaleKu.avif" alt="Portofolio 1" width="w-full" />
+                                </div>
+                                <h4 class="mb-1 text-xl font-semibold ">Point of Saleku</h4>
+                                <p class="font-mono text-base text-light">
+                                    Merupakan sebuah Single Page Application (SPA) yang dikembangkan menggunakan <span
+                                        class="font-thin italic">Angular</span> dan <span
+                                        class="font-thin italic">Lumen</span>
+                                    untuk mendukung kegiatan operasional toko retail
+                                    seperti penjualan, inventaris barang, laporan keuangan, dan sebagainya. <a
+                                        href="https://pointofsaleku.web.app/" class="font-semibold ">Demo</a>
+                                    <span class="text-xs font-extralight italic">(username: manajer | password:
+                                        456654)</span>
+                                </p>
+                            </div>
+
+                            <div class="xl:1/3 mb-12 p-4 md:w-1/2 lg:w-1/3">
+                                <div class="mb-2 overflow-hidden">
+                                    <img src="assets/images/RentalYuk.avif" alt="Portofolio 1" width="w-full" />
+                                </div>
+                                <h4 class="mb-1 text-xl font-semibold ">RentalYuk</h4>
+                                <p class="font-mono text-base text-light">
+                                    Sebuah aplikasi manajemen rental berbasis web yang dikembangkan menggunakan <span
+                                        class="font-thin italic">Laravel, AlpineJS</span> dan <span
+                                        class="font-thin italic">Tailwind</span>.
+                                    <a href="https://pahlawan-kita.web.app/" class="font-semibold ">Demo</a>
+                                </p>
+                            </div>
+
+                            <div class="xl:1/3 mb-12 p-4 md:w-1/2 lg:w-1/3">
+                                <div class="mb-2 overflow-hidden">
+                                    <img src="assets/images/PahlawanKita.avif" alt="Portofolio 1" width="w-full" />
+                                </div>
+                                <h4 class="mb-1 text-xl font-semibold ">PahlawanKita</h4>
+                                <p class="font-mono text-base text-light">
+                                    Merupakan sebuah aplikasi website sederhana yang dikembangkan menggunakan <span
+                                        class="font-thin italic">Vanilla Javascript</span> dan <span
+                                        class="font-thin italic">Laravel</span>
+                                    untuk mengenal Pahlawan Nasional lebih dekat.
+                                    <a href="https://fatihrizqon.github.io/pahlawankita" class="font-semibold ">Demo</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="md:pt-18 pt-20 pb-32 lg:pt-20 ">
+                <div class="w-[90%] md:w-[80%] mx-auto">
+                    <div class="mx-auto mb-4 w-full text-center">
+                        <h4 class="mb-4 text-lg font-bold uppercase text-primary lg:text-xl">Hubungi Saya</h4>
+                        <p>Ingin lebih mengenal tentang saya? Silahkan tinggalkan pesan melalui form berikut:</p>
+                    </div>
+
+                    <form class="w-full" id="contact-form" action="https://formspree.io/f/mzboyppk" method="POST">
+                        <div class="w-full">
+                            <div class="mb-8 w-full px-4">
+                                <label for="name" class="mb-2 text-base font-bold text-primary">Nama:</label>
+                                <input id="name" type="text" name="name" placeholder="Masukkan nama anda"
+                                    class="w-full rounded-md  text-black bg-slate-100 p-3 text-dark transition duration-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                                    required />
+                            </div>
+                            <div class="mb-8 w-full px-4">
+                                <label for="email" class="mb-2 text-base font-bold text-primary">Email:</label>
+                                <input id="email" type="text" name="email" placeholder="Masukkan e-mail anda"
+                                    class="w-full rounded-md  text-black bg-slate-100 p-3 text-dark transition duration-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                                    required />
+                            </div>
+                            <div class="mb-8 w-full px-4">
+                                <label for="message" class="mb-2 text-base font-bold text-primary">Pesan:</label>
+                                <textarea id="message" type="text" name="message"
+                                    class="h-32 w-full rounded-md  text-black bg-slate-100 p-3 text-dark transition duration-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                                    required> </textarea>
+                            </div>
+                            <div class="mb-8 flex w-full justify-end px-4">
+                                <button type="submit"
+                                    class="py-1 px-2 rounded-lg shadow-md text-md text-white bg-black hover:brightness-50 transition-all">Kirim</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+
+        <footer id="footer" class="bottom-0 left-0 grid text-white">
+            <div class="w-[90%] md:w-[80%] mx-auto">
+                <div class="flex flex-wrap text-white">
+                    <div class="mb-12 grid w-full justify-items-start px-4 md:w-1/3">
+                        <h2 class="mb-4 text-lg font-semibold">Kontak Saya:</h2>
+                        <h3 class="mb-2 flex items-center"><i class="bx bx-map bx-sm mx-2 text-accent"></i> Yogyakarta
+                        </h3>
+                        <h3 class="mb-2 flex items-center"><i class="bx bxl-gmail bx-sm mx-2"
+                                style="color: #bb001b"></i>
+                            fatihrizqon@gmail.com</h3>
+                        <h3 class="mb-2 flex items-center"><i class="bx bxl-whatsapp bx-sm mx-2"
+                                style="color: #4fce5d"></i> +62 821
+                            4555 6225</h3>
+                    </div>
+
+                    <div
+                        class="mb-12 flex flex-col w-full items-center justify-center px-4 md:w-1/3 min-h-full bg-black/50 transition-all shadow-md rounded-lg">
+                        <div id="quote" class="text-center italic text-slate-50">
+                            <blockquote id="quoteText"></blockquote>
+                            <p id="quoteAuthor" class="font-bold"></p>
+                        </div>
+
+                        <div id="loading" class="hidden">
+                            <i class="bx bx-loader bx-spin bx-sm text-white"></i>
+                        </div>
+                    </div>
+
+                    <div class="mb-12 grid w-full justify-items-end px-4 md:w-1/3">
+                        <h2 class="mb-4 text-lg font-semibold">Tautan</h2>
+                        <h3 class="mb-2 flex"><a href="#home">Beranda</a></h3>
+                        <h3 class="mb-2 flex"><a href="#about">Tentang</a></h3>
+                        <h3 class="mb-2 flex"><a href="#portfolio">Portofolio</a></h3>
+                        <h3 class="mb-2 flex"><a href="#contact">Hubungi Saya</a></h3>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="self-end w-full py-4">
+                    <div class="mb-2 flex items-center justify-center">
+                        <a href="https://www.instagram.com/fatihrizqon"
+                            class="mr-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black/25 shadow-md text-white hover:bg-white/50 transition duration-300"
+                            target="_blank"><i class="bx bxl-instagram bx-xs"></i>
+                        </a>
+                        <a href="https://www.twitter.com/fatihrizqon"
+                            class="mr-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black/25 shadow-md text-white hover:bg-white/50 transition duration-300"
+                            target="_blank"><i class="bx bxl-twitter bx-xs"></i>
+                        </a>
+                        <a href="mailto: fatihrizqon@gmail.com"
+                            class="mr-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black/25 shadow-md text-white hover:bg-white/50 transition duration-300"
+                            target="_blank"><i class="bx bxl-gmail bx-xs"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fatihrizqon/"
+                            class="hover:bg-darwhitek mr-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black/25 shadow-md text-white hover:bg-white/50 transition duration-300"
+                            target="_blank"><i class="bx bxl-linkedin-square bx-xs"></i>
+                        </a>
+                        <a href="https://www.github.com/fatihrizqon"
+                            class="mr-3 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-black/25 shadow-md text-white hover:bg-white/50 transition duration-300"
+                            target="_blank"><i class="bx bxl-github bx-xs"></i>
+                        </a>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center text-xs font-normal text-white">
+                        <span class="flex items-center justify-center">
+                            <span class="mr-1"><a href="https://www.instagram.com/fatihrizqon/"
+                                    class="transition duration-300 hover:text-slate-200" target="_blank">Muhammad Fatih
+                                    Rizqon </a> (2022) | </span>
+                            <a class="flex items-center justify-center" href="https://tailwindcss.com/"
+                                target="_blank"><i class="bx bxl-tailwind-css bx-xs" style="color: #38bdf8"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+    <script src="/assets/js/script.js"></script>
+
+</html>
