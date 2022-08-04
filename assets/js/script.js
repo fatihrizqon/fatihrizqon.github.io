@@ -10,15 +10,13 @@ window.onscroll = () => {
     }
 };
 
-window.onload = () => {
-    document.querySelector("#navigation") ? document.querySelector("#navigation").classList.remove("hidden") : '';
-    getResult();
-}
+const navigation = document.querySelector("#navigation");
+const loading = document.querySelector("#loading");
+const quotes = document.querySelector("#quote");
 
 window.setInterval(
     (window.onload = function getQuote() {
-        const loading = document.querySelector("#loading");
-        const quotes = document.querySelector("#quote");
+        navigation.classList.contains("hidden") ? navigation.classList.remove("hidden") : '';
         loading.classList.toggle("hidden");
         quotes.classList.toggle("hidden");
         fetch("https://type.fit/api/quotes")
