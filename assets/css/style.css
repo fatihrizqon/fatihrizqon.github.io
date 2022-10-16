@@ -604,6 +604,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-\[100px\] {
   height: 100px;
 }
@@ -801,6 +805,66 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#DD0031\] {
+  --tw-text-opacity: 1;
+  color: rgb(221 0 49 / var(--tw-text-opacity));
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
+.text-\[\#FF2D20\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 45 32 / var(--tw-text-opacity));
+}
+
+.text-\[\#FCDC00\] {
+  --tw-text-opacity: 1;
+  color: rgb(252 220 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#2449D8\] {
+  --tw-text-opacity: 1;
+  color: rgb(36 73 216 / var(--tw-text-opacity));
+}
+
+.text-\[\#E54C21\] {
+  --tw-text-opacity: 1;
+  color: rgb(229 76 33 / var(--tw-text-opacity));
+}
+
+.text-\[\#005B85\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 91 133 / var(--tw-text-opacity));
+}
+
+.text-\[\#144477\] {
+  --tw-text-opacity: 1;
+  color: rgb(20 68 119 / var(--tw-text-opacity));
+}
+
+.text-\[\#1C93E4\] {
+  --tw-text-opacity: 1;
+  color: rgb(28 147 228 / var(--tw-text-opacity));
+}
+
+.text-\[\#F2F2F2\] {
+  --tw-text-opacity: 1;
+  color: rgb(242 242 242 / var(--tw-text-opacity));
+}
+
+.text-\[\#FFFFFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#DE4032\] {
+  --tw-text-opacity: 1;
+  color: rgb(222 64 50 / var(--tw-text-opacity));
+}
+
 .backdrop-blur-sm {
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -918,6 +982,15 @@ html {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.hover\:text-gray-200:hover {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-400\/50:hover {
+  color: rgb(156 163 175 / 0.5);
+}
+
 @media (min-width: 768px) {
   .md\:mb-4 {
     margin-bottom: 1rem;
@@ -951,5 +1024,11 @@ html {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid {
+    display: grid;
   }
 }
